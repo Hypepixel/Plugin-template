@@ -17,19 +17,23 @@ Name | Description | Version
 
 ### Steps
   * Clone this git repository into your Eclipse workspace.
-  * Go to create a new Java project.
+  * Right-click in the `Package Explorer` and create a new Java project.
   
-  * Rename the gloryrock.template.main Java package under `src/main/java` to reflect your namespace.
+  * Open `Template.java` in `src/main/java`
+    * Rename the gloryrock.template.main Java package to reflect your namespace.
+    * Rename or replace the main class `Template.java` with something that reflects your entry point.
   
-  * Rename the groupId in `pom.xml` to reflect your own namespace.
-  * Rename artifactId in `pom.xml ` to your own plugin name.
-  * Change the `source` and `target` version of Java in `pom.xml` to the ones you've installed.
-  * Change the `spigot-api` version in `pom.xml` to the most recent one found [here](https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/).
+  * Open `pom.xml` in the project root
+    * Rename the `groupId` to reflect your own namespace.
+    * Rename `artifactId` to your own plugin name.
+    * Change the `source` and `target` version of Java to the ones you've installed.
+    * Change the `spigot-api` version to the most recent one found [here](https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/).
   
-  * Change the `name` in `plugin.yml` under `src/main/resources` to your plugin name.
-  * Change the `main` in `plugin.yml` to your own main class in the package that reflects your namespace.
-  * Change the `author` to your username
-  * Change the `description` to match your plugin.
+  * Open `plugin.yml` in `src/main/resources`
+    * Change the `name` to your plugin name.
+    * Change the `main` to your own main class in the package that reflects your namespace.
+    * Change the `author` to your username.
+    * Change the `description` to match your plugin.
     
 ## References
 [Using the Spigot-API](https://www.spigotmc.org/wiki/spigot-plugin-development/)
@@ -37,6 +41,8 @@ Name | Description | Version
 [User-contributed code examples for simple plugins](https://www.spigotmc.org/wiki/plugin-snippets/)
 
 [Creating your first bukkit plugin](https://hypixel.net/threads/creating-your-first-bukkit-plugin.286674/)
+
+[The Maven project descriptor](http://maven.apache.org/ref/3.2.3/maven-model/maven.html)
 
 ## License
 This project is licensed under the [MIT License](https://github.com/Gloryrock/Plugin-template/blob/master/LICENSE.md).
