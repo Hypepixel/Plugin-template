@@ -18,6 +18,18 @@ Name | Description | Version
 ### Steps
   * Clone this git repository into your Eclipse workspace.
   * Go to create a new Java project.
+  
+  * Rename the gloryrock.template.main Java package under `src/main/java` to reflect your namespace.
+  
+  * Rename the groupId in `pom.xml` to reflect your own namespace.
+  * Rename artifactId in `pom.xml ` to your own plugin name.
+  * Change the `source` and `target` version of Java in `pom.xml` to the ones you've installed.
+  * Change the `spigot-api` version in `pom.xml` to the most recent one found [here](https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/).
+  
+  * Change the `name` in `plugin.yml` under `src/main/resources` to your plugin name.
+  * Change the `main` in `plugin.yml` to your own main class in the package that reflects your namespace.
+  * Change the `author` to your username
+  * Change the `description` to match your plugin.
     
 ## References
 [Using the Spigot-API](https://www.spigotmc.org/wiki/spigot-plugin-development/)
